@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step 4 – Detailed Suggestions | Smart Construction Planner</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+      background:#f5f7fb;
+      color:#111827;
+    }
+    a{color:#10b981;text-decoration:none;}
+    a:hover{text-decoration:underline;}
+
+    .wrap{
+      max-width:1000px;
+      margin:28px auto 24px;
+      padding:0 7vw;
+    }
+    .head{margin-bottom:16px;}
+    .step-tag{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:4px 10px;
+      border-radius:999px;
+      background:#fef9c3;
+      color:#854d0e;
+      font-size:0.75rem;
+      margin-bottom:8px;
+    }
+    h1{font-size:1.9rem;margin-bottom:4px;}
+    .sub{font-size:0.9rem;color:#4b5563;}
+
+    .card{
+      background:#ffffff;
+      border-radius:20px;
+      border:1px solid #e5e7eb;
+      box-shadow:0 16px 44px rgba(15,23,42,0.1);
+      padding:20px 18px 22px;
+    }
+    .section{
+      margin-bottom:14px;
+      padding:12px 12px 13px;
+      border-radius:14px;
+      background:#f9fafb;
+      border:1px solid #e5e7eb;
+      font-size:0.9rem;
+    }
+    .section h2{
+      font-size:1rem;
+      margin-bottom:6px;
+    }
+    p{line-height:1.6;}
+    ul{margin-left:18px;line-height:1.6;}
+    .share{
+      margin-top:6px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      font-size:0.85rem;
+    }
+    .btn{
+      padding:9px 18px;
+      border-radius:999px;
+      border:1px solid #d1d5db;
+      background:#ffffff;
+      font-size:0.9rem;
+      cursor:pointer;
+    }
+    .btn-primary{
+      background:#10b981;
+      border-color:#10b981;
+      color:#ffffff;
+      box-shadow:0 10px 26px rgba(16,185,129,0.24);
+    }
+    .btn-primary:hover{background:#0ea371;}
+    .nav-row{
+      margin-top:16px;
+      text-align:center;
+    }
+    .note{
+      margin-top:10px;
+      font-size:0.8rem;
+      color:#6b7280;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="head">
+      <div class="step-tag">Step 4 of 4 • Lifestyle & smart‑home tips</div>
+      <h1>Detailed notes for your architect</h1>
+      <p class="sub">
+        A quick checklist of lifestyle, sustainability, expansion and smart‑home ideas
+        based on your earlier answers.
+      </p>
+    </header>
+
+    <section class="card">
+      <div class="section" id="lifestyleSummarySection">
+        <h2>👨‍👩‍👧 Lifestyle‑based layout tips</h2>
+        <p id="lifestyleSummaryText"></p>
+      </div>
+
+      <div class="section" id="sustainabilitySection">
+        <h2>🌱 Sustainability & comfort</h2>
+        <ul id="sustainabilityList"></ul>
+      </div>
+
+      <div class="section" id="expansionSection">
+        <h2>📈 Future expansion thinking</h2>
+        <p id="expansionText"></p>
+      </div>
+
+      <div class="section" id="smartHomeSection">
+        <h2>📡 Smart‑home readiness</h2>
+        <ul id="smartHomeList"></ul>
+      </div>
+
+      <div class="section">
+        <h2>📲 Share this plan</h2>
+        <div class="share">
+          <button class="btn btn-primary" id="copySummaryBtn">Copy summary text</button>
+          <a id="waShare" target="_blank" style="text-decoration:none;">
+            <button class="btn" type="button">Share via WhatsApp</button>
+          </a>
+          <span id="copyStatus"></span>
+        </div>
+      </div>
+
+      <div class="nav-row">
+        <button class="btn" id="backToTopPage">← Back to overview</button>
+        <button class="btn btn-primary" id="restartAll">Start new plan</button>
+      </div>
+    </section>
+
+    <p class="note">
+      Use these notes as a starting brief. Your architect will refine, add and
+      sometimes delete points to suit local site conditions.
+    </p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

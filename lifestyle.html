@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step 2 – Lifestyle | Smart Construction Planner</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+      background:#f5f7fb;
+      color:#111827;
+    }
+    a{color:#10b981;text-decoration:none;}
+    a:hover{text-decoration:underline;}
+
+    .wrap{
+      max-width:900px;
+      margin:28px auto 24px;
+      padding:0 7vw;
+    }
+    .head{margin-bottom:14px;}
+    .step-tag{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:4px 10px;
+      border-radius:999px;
+      background:#eff6ff;
+      color:#1d4ed8;
+      font-size:0.75rem;
+      margin-bottom:8px;
+    }
+    h1{font-size:1.8rem;margin-bottom:4px;}
+    .sub{font-size:0.9rem;color:#4b5563;}
+
+    .card{
+      margin-top:14px;
+      background:#ffffff;
+      border-radius:20px;
+      border:1px solid #e5e7eb;
+      box-shadow:0 14px 40px rgba(15,23,42,0.08);
+      padding:20px 18px 22px;
+    }
+    h2{font-size:1.1rem;margin-bottom:12px;}
+    .group{margin-bottom:18px;font-size:0.9rem;}
+    label{font-weight:500;}
+    .options{
+      margin-top:8px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:6px 11px;
+      border-radius:999px;
+      border:1px solid #d1d5db;
+      background:#f9fafb;
+      font-size:0.88rem;
+    }
+    input[type="checkbox"],
+    input[type="radio"]{
+      accent-color:#10b981;
+      width:16px;
+      height:16px;
+    }
+    .hint{
+      margin-top:4px;
+      font-size:0.8rem;
+      color:#6b7280;
+    }
+    .btn-primary{
+      margin-top:6px;
+      width:100%;
+      padding:11px 0;
+      border-radius:999px;
+      border:1px solid #10b981;
+      background:#10b981;
+      color:#ffffff;
+      font-size:0.95rem;
+      font-weight:600;
+      cursor:pointer;
+      box-shadow:0 10px 26px rgba(16,185,129,0.28);
+    }
+    .btn-primary:hover{background:#0ea371;}
+    .footer-line{
+      margin-top:10px;
+      font-size:0.8rem;
+      color:#6b7280;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="head">
+      <div class="step-tag">Step 2 of 4 • Lifestyle & expansion</div>
+      <h1>Tell us how you’ll use the home</h1>
+      <p class="sub">
+        These answers help us prioritise room sizes, circulation and future‑ready structure.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>Everyday life</h2>
+      <form id="lifestyleForm">
+        <div class="group">
+          <label>Lifestyle & usage</label>
+          <div class="options">
+            <label class="chip"><input type="checkbox" id="hostGuests"> I host guests often</label>
+            <label class="chip"><input type="checkbox" id="workFromHome"> I work from home</label>
+            <label class="chip"><input type="checkbox" id="kids"> Kids at home</label>
+            <label class="chip"><input type="checkbox" id="elderly"> Elderly parents at home</label>
+          </div>
+          <div class="hint">We use this to highlight privacy, noise and circulation tips.</div>
+        </div>
+
+        <div class="group">
+          <label>Future expansion priority</label>
+          <div class="options">
+            <label class="chip"><input type="radio" name="expansion" value="none" checked> No clear plan yet</label>
+            <label class="chip"><input type="radio" name="expansion" value="vertical"> Add a floor later</label>
+            <label class="chip"><input type="radio" name="expansion" value="horizontal"> Extend rooms sideways</label>
+          </div>
+        </div>
+
+        <button id="genBtn" type="submit" class="btn-primary">
+          Generate smart plan →
+        </button>
+      </form>
+      <div class="footer-line">
+        <a href="plot.html">← Back to plot details</a>
+      </div>
+    </section>
+
+    <p class="footer-line" style="margin-top:18px;">
+      We don’t store your data on any server; everything runs in your browser.
+    </p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
