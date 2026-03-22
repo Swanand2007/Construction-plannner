@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Step 1 – Plot Details | Smart Construction Planner</title>
-  <style>
+  <link rel="stylesheet" href="Style.css">
+  <!-- <style>
     *{margin:0;padding:0;box-sizing:border-box;}
     body{
       font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -101,10 +102,65 @@
     @media(max-width:720px){
       .grid{grid-template-columns:1fr;}
     }
+  </style> -->
+  <style>
+    label{
+      display:block;
+      margin-bottom:4px;
+      font-weight:500;
+    }
+    input,select{
+      width:100%;
+      padding:9px 11px;
+      border-radius:10px;
+      border:1px solid #d1d5db;
+      font-size:0.9rem;
+      outline:none;
+      background:#f9fafb;
+    }
+    input:focus,select:focus{
+      border-color:#10b981;
+      box-shadow:0 0 0 1px rgba(16,185,129,0.4);
+      background:#ffffff;
+    }
+    .hint{
+      font-size:0.8rem;
+      color:#6b7280;
+      margin-top:2px;
+    }
+    .full{grid-column:1 / -1;}
+    .btn-primary{
+      margin-top:16px;
+      width:100%;
+      padding:11px 0;
+      border-radius:999px;
+      border:1px solid #10b981;
+      background:#10b981;
+      color:#ffffff;
+      font-size:0.95rem;
+      font-weight:600;
+      cursor:pointer;
+      box-shadow:0 10px 26px rgba(16,185,129,0.28);
+    }
+    .btn-primary:hover{background:#0ea371;}
+    .footer-line{
+      margin-top:10px;
+      font-size:0.8rem;
+      color:#6b7280;
+      text-align:center;
+    }
+    @media(max-width:720px){
+      .grid{grid-template-columns:1fr;}
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
+
+  <!-- ✅ Reusable BG Picker (same as About page) -->
+  <div class="bg-picker" id="bgPicker"></div>
+
+<div id="navContainer"></div>
+  <div class="shell">
     <header class="head">
       <div class="step-tag">Step 1 of 4 • Plot basics</div>
       <h1>Describe your plot</h1>
@@ -171,5 +227,11 @@
   </div>
 
   <script src="app.js"></script>
+
+<div id="footerContainer"></div>
+
+  <!-- ✅ External JS -->
+  <script src="bg-picker.js"></script>
+  <script src="layout.js"></script>
 </body>
 </html>

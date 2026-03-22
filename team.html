@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team – Smart Construction Planner</title>
-  <style>
+  <link rel="stylesheet" href="Style.css">
+  <!-- <style>
     *{margin:0;padding:0;box-sizing:border-box;}
     body{
       font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -83,10 +84,15 @@
     @media(max-width:640px){
       .top{flex-direction:column;}
     }
-  </style>
+  </style> -->
 </head>
 <body>
-  <div class="wrap">
+
+  <!-- ✅ Reusable BG Picker (same as About page) -->
+  <div class="bg-picker" id="bgPicker"></div>
+
+<div id="navContainer"></div>
+  <div class="shell">
     <div class="card">
       <div class="top">
         <div style="display:flex;gap:10px;align-items:center;">
@@ -148,5 +154,11 @@
       </div>
     </div>
   </div>
+
+<div id="footerContainer"></div>
+
+  <!-- ✅ External JS -->
+  <script src="bg-picker.js"></script>
+  <script src="layout.js"></script>
 </body>
 </html>
