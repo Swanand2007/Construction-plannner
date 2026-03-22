@@ -210,7 +210,7 @@ if (window.location.pathname.endsWith("results-top.html")) {
       galleryTitle.textContent = "Compact 1BHK-style layout inspiration";
     }
     if (planningVideo) {
-      planningVideo.src = "planning-1bhk.mp4";
+      planningVideo.src = "planning-1bhk.mp4.mp4";
     }
   } else if (houseType.includes("2BHK")) {
     if (bhkImg) {
