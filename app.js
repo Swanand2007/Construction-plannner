@@ -203,7 +203,7 @@ if (window.location.pathname.endsWith("results-top.html")) {
 
   if (houseType.includes("1BHK")) {
     if (bhkImg) {
-      bhkImg.src = "layout-1bhk.jpg";
+      bhkImg.src = "layout-1bhk.jpg.jpeg";
       bhkImg.alt = "Sample compact 1BHK floor plan suggestion";
     }
     if (galleryTitle) {
@@ -214,25 +214,25 @@ if (window.location.pathname.endsWith("results-top.html")) {
     }
   } else if (houseType.includes("2BHK")) {
     if (bhkImg) {
-      bhkImg.src = "layout-2bhk.jpg";
+      bhkImg.src = "layout-2bhk.jpg.jpeg";
       bhkImg.alt = "Sample 2BHK layout suggestion";
     }
     if (galleryTitle) {
       galleryTitle.textContent = "Comfort 2BHK-style layout inspiration";
     }
     if (planningVideo) {
-      planningVideo.src = "planning-2bhk.mp4";
+      planningVideo.src = "planning-2bhk.mp4.mp4";
     }
   } else {
     if (bhkImg) {
-      bhkImg.src = "layout-3bhk.jpg";
+      bhkImg.src = "layout-3bhk.jpg.jpeg";
       bhkImg.alt = "Sample 3BHK / larger layout suggestion";
     }
     if (galleryTitle) {
       galleryTitle.textContent = "Family 3BHK / duplex-style layout inspiration";
     }
     if (planningVideo) {
-      planningVideo.src = "planning-3bhk.mp4";
+      planningVideo.src = "planning-3bhk.mp4.mp4";
     }
   }
 

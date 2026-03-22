@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Step 3 – Plan Overview | Smart Construction Planner</title>
-  <style>
+  <link rel="stylesheet" href="Style.css">
+  <!-- <style>
     *{margin:0;padding:0;box-sizing:border-box;}
     body{
       font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -44,6 +45,9 @@
       padding:20px 18px 22px;
     }
 
+    
+  </style> -->
+  <style>
     .top-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
@@ -282,7 +286,12 @@
   </style>
 </head>
 <body>
-  <div class="wrap">
+
+  <!-- ✅ Reusable BG Picker (same as About page) -->
+  <div class="bg-picker" id="bgPicker"></div>
+
+<div id="navContainer"></div>
+  <div class="shell">
     <header class="head">
       <div class="step-tag">Step 3 of 4 • Plan overview</div>
       <h1>Your estimated house profile</h1>
@@ -426,5 +435,11 @@
   </div>
 
   <script src="app.js"></script>
+
+<div id="footerContainer"></div>
+
+  <!-- ✅ External JS -->
+  <script src="bg-picker.js"></script>
+  <script src="layout.js"></script>
 </body>
 </html>
