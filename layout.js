@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ========================= */
   const footerHTML = `
     <footer class="footer">
-      <span>© 2026 Smart Construction Planner • Concept only</span>
+      <span>© 2026 VAASTRA • Concept only</span>
       <span>
         <a href="about.html">About</a> ·
         <a href="team.html">Team</a>
