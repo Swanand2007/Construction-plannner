@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="nav-left">
         <div class="nav-logo">🏗️</div>
         <div>
-          <div class="nav-title">Smart Construction Planner</div>
+          <div class="nav-title">VAASTRA</div>
           <div style="font-size:0.7rem;color:#6b7280;">Student concept • No login</div>
         </div>
       </div>
